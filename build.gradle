@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.4.2.RELEASE'
+		springBootVersion = '2.0.0.BUILD-SNAPSHOT'
 	}
 	repositories {
 		mavenCentral()
@@ -28,8 +28,13 @@ repositories {
 }
 
 dependencies {
+	compile("org.springframework.boot:spring-boot-starter-thymeleaf")
 	compile('org.springframework.boot:spring-boot-starter-data-mongodb')
 	compile('org.springframework.boot:spring-boot-starter-web')
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.6.3'
+	testCompile('com.jayway.jsonpath:json-path')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
+
 

@@ -6,6 +6,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 //@ImportResource({"classpath:mongo-context.xml"})
+/*@ImportResource({"classpath:tiles.xml"})
+*/
 @ComponentScan(basePackages={"com.daily"})
 public class Application {
 	public static void main(String[] args){

@@ -1,3 +1,4 @@
+package com.daily.controller;
 /*package com.daily.controller;
 
 import java.util.Collection;
